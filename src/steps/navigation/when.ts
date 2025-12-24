@@ -1,6 +1,6 @@
 import type { Page } from "@playwright/test";
-import { When } from "../../../fixtures/test";
-import { navigationPage } from "../../../pages/NavigationPage";
+import { When } from "@fixtures/test";
+import { navigationPage } from "@pages/NavigationPage";
 
 const when = {
   openMenu: (page: Page, testId: string) =>

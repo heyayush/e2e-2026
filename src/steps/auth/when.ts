@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
-import { When } from "../../../fixtures/test";
-import { authPage } from "../../../pages/AuthPage";
+import { When } from "@fixtures/test";
+import { authPage } from "@pages/AuthPage";
 
 const when = {
   clickLoginButton: (page: Page) =>

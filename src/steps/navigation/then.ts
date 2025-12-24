@@ -1,6 +1,6 @@
 import type { Page } from "@playwright/test";
-import { Then } from "../../../fixtures/test";
-import { navigationPage } from "../../../pages/NavigationPage";
+import { Then } from "@fixtures/test";
+import { navigationPage } from "@pages/NavigationPage";
 
 const then = {
   menuItemsShouldBeVisible: (page: Page, items: string[]) =>

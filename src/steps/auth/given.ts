@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
-import { Given } from "../../../fixtures/test";
-import { authPage } from "../../../pages/AuthPage";
+import { Given } from "@fixtures/test";
+import { authPage } from "@pages/AuthPage";
 
 const given = {
   openDashboard: (page: Page) =>

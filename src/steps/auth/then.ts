@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
-import { Then } from "../../../fixtures/test";
-import { authPage } from "../../../pages/AuthPage";
+import { Then } from "@fixtures/test";
+import { authPage } from "@pages/AuthPage";
 
 const then = {
   loginButtonShouldBeVisible: (page: Page) =>

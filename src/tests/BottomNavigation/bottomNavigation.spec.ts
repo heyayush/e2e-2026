@@ -1,8 +1,6 @@
-import { test } from "../../fixtures/test";
+import { test } from "@fixtures/test";
 import type { Page } from "@playwright/test";
-import { given } from "../../steps/navigation/given/given";
-import { when } from "../../steps/navigation/when/when";
-import { then } from "../../steps/navigation/then/then";
+import { given, when, then } from "@steps/navigation";
 
 test.describe("@smoke Dashboard Navigation", () => {
   test.beforeEach(async ({ page }: { page: Page }) => {
