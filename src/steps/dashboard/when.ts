@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
-import { When } from "../../fixtures/test";
-import { dashboardPage } from "../../pages/DashboardPage";
+import { When } from "@fixtures/test";
+import { dashboardPage } from "@pages/DashboardPage";
 
 const when = {
   clickPersonIcon: (page: Page) =>

@@ -26,6 +26,6 @@
       "@data/*": ["src/data/*"]
     }
   },
-  "include": ["tests", "playwright.config.ts"],
+  "include": ["src", "playwright.config.ts"],
   "exclude": ["node_modules"]
 }

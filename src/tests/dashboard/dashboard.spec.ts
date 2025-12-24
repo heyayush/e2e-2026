@@ -1,6 +1,6 @@
-import { test } from "../../fixtures/test";
+import { test } from "@fixtures/test";
 import type { Page } from "@playwright/test";
-import { given, when, then } from "../../steps/dashboard";
+import { given, when, then } from "@steps/dashboard";
 
 test.describe("@smoke Dashboard", () => {
   test("User should be able to logout", async ({ page }: { page: Page }) => {
