@@ -1,10 +1,10 @@
 import { Page } from "@playwright/test";
-import { When } from "../../../fixtures/test";
-import { dashboardPage } from "../../../pages/DashboardPage";
+import { When } from "../../fixtures/test";
+import { dashboardPage } from "../../pages/DashboardPage";
 
 const when = {
   clickPersonIcon: (page: Page) =>
-    When("I get the Person Icon on the Dashboard page", async () => {
+    When("I click Person Icon on the Top bar", async () => {
       const personIcon = await dashboardPage(page).getPersonIcon();
       await personIcon.click();
     }),
