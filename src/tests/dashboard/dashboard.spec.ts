@@ -1,9 +1,14 @@
 import { test } from "../../fixtures/test";
 import type { Page } from "@playwright/test";
-import { dashboardSteps } from "../../steps/dashboard/dashboard.steps";
+import { given } from "../../steps/dashboard/given/given";
+import { when } from "../../steps/dashboard/when/when";
+import { then } from "../../steps/dashboard/then/then";
 
 test.describe("@smoke Dashboard", () => {
-  test("Dashboard loads correctly", async ({ page }: { page: Page }) => {
-    await dashboardSteps.openDashboard(page);
+  test("User should be able to logout", async ({ page }: { page: Page }) => {
+    await given.openDashboard(page);
+    await when.clickPersonIcon(page);
+    await when.clickLogoutButton(page);
+    await then.loginButtonShouldBeVisible(page);
   });
 });

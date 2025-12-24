@@ -1,9 +1,21 @@
 import { Page } from "@playwright/test";
 
-const createDashboardPage = (page: Page) => ({
+const dashboardPage = (page: Page) => ({
   open: async () => {
     await page.goto("/dashboard");
   },
+
+  getPersonIcon: async () => {
+    return page.getByTestId("PersonIcon");
+  },
+
+  getLogoutButton: async () => {
+    return page.getByText("Logout");
+  },
+
+  getLoginButton: async () => {
+    return page.getByText("Login");
+  },
 });
 
-export { createDashboardPage };
+export { dashboardPage };
